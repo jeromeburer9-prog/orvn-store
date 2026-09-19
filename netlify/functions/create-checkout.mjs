@@ -62,11 +62,10 @@ export default async (request) => {
     );
 
     // Wenn Kunde Checkout abbricht
-    params.append(
-      "cancel_url",
-      `${process.env.URL}/`
-    );
-
+   params.append(
+  "cancel_url",
+  `${process.env.URL}/cancel.html`
+);
     // Rechnungsadresse automatisch
     params.append(
       "billing_address_collection",
