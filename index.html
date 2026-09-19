@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -8,9 +10,10 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>ORVN — Order Confirmed</title>
+  <title>ORVN. — Bestellung bestätigt</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -20,80 +23,129 @@
       margin: 0;
       padding: 0;
       min-height: 100%;
-      background: #0a0a0a;
-      color: #d8d2c7;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
       min-height: 100vh;
+
+      background: #0a0a0a;
+
+      color: #d8d2c7;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       padding: 24px;
     }
 
     .container {
+
       width: 100%;
-      max-width: 700px;
+
+      max-width: 720px;
+
       text-align: center;
+
       border: 1px solid #30302d;
+
       padding: 60px 30px;
     }
 
     .logo {
-      font-size: 42px;
+
+      font-size: 44px;
+
       font-weight: 900;
-      letter-spacing: -2px;
+
+      letter-spacing: -3px;
+
       margin-bottom: 50px;
     }
 
     .number {
+
       color: #7a1717;
-      font-size: 12px;
+
+      font-size: 11px;
+
       letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
+
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin: 0 0 20px;
-      font-size: clamp(38px, 8vw, 72px);
+
+      margin: 0 0 25px;
+
+      font-size: clamp(
+        42px,
+        8vw,
+        76px
+      );
+
       line-height: 0.95;
-      letter-spacing: -3px;
+
+      letter-spacing: -4px;
+
       text-transform: uppercase;
     }
 
     p {
-      max-width: 500px;
+
+      max-width: 520px;
+
       margin: 0 auto 35px;
-      color: #8f8f89;
+
+      color: #99958e;
+
       line-height: 1.7;
     }
 
     a {
+
       display: inline-block;
-      padding: 15px 24px;
+
+      padding: 16px 26px;
+
       background: #d8d2c7;
+
       color: #0a0a0a;
+
       text-decoration: none;
+
       font-weight: 800;
+
       letter-spacing: 1px;
     }
 
     a:hover {
+
       opacity: 0.85;
     }
 
     .micro {
+
       margin-top: 40px;
+
       font-size: 10px;
+
       letter-spacing: 3px;
+
       color: #5f5f5b;
-      text-transform: uppercase;
     }
+
   </style>
+
 </head>
+
 
 <body>
 
@@ -103,14 +155,17 @@
       ORVN.
     </div>
 
+
     <div class="number">
       ORDER CONFIRMED / 001
     </div>
+
 
     <h1>
       BEYOND<br>
       THE SURFACE
     </h1>
+
 
     <p>
       Danke für deine Bestellung bei ORVN.
@@ -118,9 +173,11 @@
       Wir bereiten deine Bestellung für den Versand vor.
     </p>
 
+
     <a href="/">
       ZURÜCK ZU ORVN
     </a>
+
 
     <div class="micro">
       ORVN / 2026 / BEYOND THE SURFACE
@@ -128,5 +185,14 @@
 
   </main>
 
+
+  <script>
+
+    // Alten Warenkorb nach erfolgreicher Bestellung löschen
+    localStorage.removeItem('orvn_cart');
+
+  </script>
+
 </body>
+
 </html>
